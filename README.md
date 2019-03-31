@@ -5,7 +5,7 @@ Swift v5 port of Structure Scanner app using StructureSDK v9
 
 ### Summary
 
-This version builds on Xcode 9 and uses Swift v4. You will need a [Structure Sensor](http://structure.io) and the StructureSDK.
+This version builds on Xcode 10 and uses Swift v5 and StructureSDK v9. You will need a [Structure Sensor](http://structure.io) and the StructureSDK.
 <p align="left">
   <img src="RRStructureScanner/wal.png" alt="shaded view" width="280"/>
 </p> 
