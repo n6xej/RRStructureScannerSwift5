@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash-Landscape" translatesAutoresizingMaskIntoConstraints="NO" id="RJk-oB-uze">
+                                <rect key="frame" x="0.0" y="288" width="1024" height="192"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.1960784314" green="0.70980392160000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RJk-oB-uze" secondAttribute="height" multiplier="667:125" id="c0e-Wd-ieq"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2019 Ruthless Research, LLC. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
+                                <rect key="frame" x="0.0" y="738" width="1024" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="ojB-62-GXK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.29497188330000002" green="0.32000851629999999" blue="0.40001028779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash-Portrait" translatesAutoresizingMaskIntoConstraints="NO" id="jNu-Pn-BOi">
+                                <rect key="frame" x="437" y="20" width="150" height="708"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jNu-Pn-BOi" secondAttribute="height" multiplier="107:506" id="pTI-bd-s3z"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.87058823529999996" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="a7c-1q-m5i" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
+                            <constraint firstItem="RJk-oB-uze" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="DMc-id-hU2"/>
+                            <constraint firstItem="RJk-oB-uze" firstAttribute="leading" secondItem="a7c-1q-m5i" secondAttribute="leading" id="MYW-1R-I4h"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="top" secondItem="jNu-Pn-BOi" secondAttribute="bottom" constant="10" id="Ox5-gb-BB7"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="a7c-1q-m5i" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
+                            <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="10" id="Y44-ml-fuU"/>
+                            <constraint firstItem="jNu-Pn-BOi" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="aef-rJ-mge"/>
+                            <constraint firstItem="a7c-1q-m5i" firstAttribute="trailing" secondItem="RJk-oB-uze" secondAttribute="trailing" id="sdz-oz-vfn"/>
+                            <constraint firstItem="jNu-Pn-BOi" firstAttribute="centerX" secondItem="a7c-1q-m5i" secondAttribute="centerX" id="wQO-eJ-VSn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a7c-1q-m5i"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51.25" y="373.125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash-Landscape" width="2048" height="414"/>
+        <image name="Splash-Portrait" width="206" height="960"/>
+    </resources>
+    <color key="tintColor" red="0.1960784314" green="0.70980392160000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+</document>
