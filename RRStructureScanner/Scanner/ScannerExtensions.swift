@@ -163,11 +163,9 @@ open class FileMgr: NSObject {
         
     }
     
-    func exists( _ name: String) -> Bool {
+    private func exists( _ name: String) -> Bool {
         
-        let fullPath = self.basePath.appendingPathComponent(name)
-        
-        return FileManager.default.fileExists(atPath: fullPath)
+		return FileManager.default.fileExists(atPath: name)
     }
 }
 
